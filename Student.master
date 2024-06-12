@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Student.master.cs" Inherits="Student" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <table style="height: 17px">
+    <tr>
+    <td bgcolor="#CD2F31" width="1920" height="10"></td>
+    </tr>
+    </table>
+    
+    <table>
+    <tr>
+    <td width="1920"  height="50" align="center"><asp:Label ID="Label1" runat="server" 
+            Text="Hiray Alumni Portal" Font-Bold="True" Font-Size="X-Large" 
+            ForeColor="#0000CC"></asp:Label></td>
+    </tr>
+    </table>
+     <table>
+    <tr>
+    <td bgcolor="#0000CC" width="1920" height="10"></td>
+    </tr>
+    </table>
+    <table>
+    <tr>
+    <td>
+    <table>
+    <tr>
+    <td width="200" align="center" height="50">
+        <asp:LinkButton ID="LinkButton1" runat="server" 
+            onclick="LinkButton1_Click" Font-Bold="True" Font-Size="Small" 
+            ForeColor="#0000CC">Manage Personal Information</asp:LinkButton>
+    </td>
+    
+    <td  width="130" align="center">
+        <asp:LinkButton ID="LinkButton2" runat="server" 
+            onclick="LinkButton2_Click" Font-Bold="True" Font-Size="Small" 
+            ForeColor="#0000CC">Update Status</asp:LinkButton>
+    </td>
+    
+    <td  width="150" align="center" >
+        <asp:LinkButton ID="lnkpostmsg" runat="server" 
+            Font-Bold="True" Font-Size="Small" 
+            ForeColor="#0000CC" onclick="lnkpostmsg_Click" >Post Information</asp:LinkButton>
+    </td>
+    <td  width="150" align="center" >
+        <asp:LinkButton ID="lnkviewmsg" runat="server" 
+             Font-Bold="True" Font-Size="Small" 
+            ForeColor="#0000CC" onclick="lnkviewmsg_Click">View Posted Information</asp:LinkButton>
+    </td>
+    
+    
+    <td  width="200" align="center" >
+        <asp:LinkButton ID="LinkButton4" runat="server" 
+            onclick="LinkButton4_Click" Font-Bold="True" Font-Size="Small" 
+            ForeColor="#0000CC">View Other Member Status</asp:LinkButton>
+    </td>
+    
+    <td  width="100" align="center">
+        <asp:LinkButton ID="LinkButton5" runat="server" 
+            onclick="LinkButton5_Click" Font-Bold="True" Font-Size="Small" 
+            ForeColor="#0000CC">LogOut</asp:LinkButton>
+    </td>
+    </tr>
+    </table>
+    </td>
+
+    </tr>
+    </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
